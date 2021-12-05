@@ -66,3 +66,4 @@ See [this useful workshop](https://cdkworkshop.com/30-python.html) on working wi
  * `cdk docs`        open CDK documentation
 
 Enjoy!
+# serverles-lambda-cdk-assignment
