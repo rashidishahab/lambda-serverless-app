@@ -1,5 +1,5 @@
 
-# Welcome to your CDK Python project!
+#  CDK Python project for lambda serverless function !
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`cdk_shahab_stack`)
 which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
@@ -54,8 +54,6 @@ To add additional dependencies, for example other CDK libraries, just add to
 your requirements.txt file and rerun the `pip install -r requirements.txt`
 command.
 
-## Tutorial  
-See [this useful workshop](https://cdkworkshop.com/30-python.html) on working with the AWS CDK for Python projects.
 
 ## Useful commands
 
