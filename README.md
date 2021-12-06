@@ -3,7 +3,7 @@
 
 This project has been developed over Cloud9 instance, just to make you sure the that i can use Cloud9 as well as development environment.
 
-I used aws aws CDK for development and deployment.
+I used aws CDK for development and deployment.
 
 tech stack used are follows as below : </br>
 
