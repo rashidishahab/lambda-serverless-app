@@ -14,7 +14,10 @@ tech stack used are follows as below : </br>
 
 stack written in python [cd_shahab_stack.py] and the lambda function also written in python. 
 
-The lambda function is triggered when a csv file uplod to the S3 bucket "employeebucket-assignment". the CSV file sample created and located in the project directory "employee.csv" once the csv file uploaded to the S3 bucket the lambda functioned will be called and handler start to get the object from the S3 bucket "employeebucket-assignment" and read to import into the DynamoDB "employeetable". with aws cloud watch i coud monitor logs group ==> "2021/12/06/[$LATEST]6763536a805244d4a976417b70c701b9"
+The lambda function is triggered when a csv file uplod to the S3 bucket "employeebucket-assignment". the CSV file sample created and located in the project directory "employee.csv" once the csv file uploaded to the S3 bucket the lambda functioned will be called and handler start to get the object from the S3 bucket "employeebucket-assignment" and read to import into the DynamoDB "employeetable". with aws cloud watch i coud monitor logs group ==> 
+```sh
+"2021/12/06/[$LATEST]6763536a805244d4a976417b70c701b9"
+```
 ```sh
 2021-12-06T14:19:01.600+03:00
 bucket-name:  employeebucket-assignment key: employee.csv
@@ -86,6 +89,15 @@ command.
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
+
+
+## Test case 
+
+Please upload the epmployee.csv into the S3 bucket 
+```sh 
+s3://employeebucket-assignment
+```
+via aws panel to see lambda fuction is working and content of the csv file load into DynamoDB. The database is clean at the moment.
 
 Enjoy!
 # serverles-lambda-cdk-assignment
