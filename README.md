@@ -1,4 +1,28 @@
 
+# General description 
+
+This project has been developed over Cloud9 instance, just to make you sure the that i can use Cloud9 as well as development environment.
+
+I used aws aws CDK for development and deployment.
+
+tech stack used are follows as below : </br>
+
+1) aws S3 
+2) aws DynamoDB
+3) aws lambda 
+4) aws notifier
+
+stack written in python [cd_shahab_stack.py] and the lambda function also written in python. 
+
+The lambda function is triggered when a csv file uplod to the S3 bucket "employeebucket-assignment". the CSV file sample created and located in the project directory "employee.csv" once the csv file uploaded to the S3 bucket the lambda functioned will be called and handler start to get the object from the S3 bucket "employeebucket-assignment" and read to import into the DynamoDB "employeetable". with aws cloud watch i coud monitor logs group ==> "2021/12/06/[$LATEST]6763536a805244d4a976417b70c701b9"
+```sh
+2021-12-06T14:19:01.600+03:00
+bucket-name:  employeebucket-assignment key: employee.csv
+	bucket-name: employeebucket-assignment key: employee.csv
+2021-12-06T14:19:02.030+03:00
+Successfully adde CSV record to DynamoDB Table 
+	Successfully adde CSV record to DynamoDB Table  
+```
 #  CDK Python project for lambda serverless function !
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`cdk_shahab_stack`)
